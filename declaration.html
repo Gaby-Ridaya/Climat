@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Déclaration Planète Saine - Climat & Environnement</title>
+    <meta name="description" content="Déclaration de conscience planétaire. Téléchargez gratuitement la carte Déclaration Planète Saine et partagez-la.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .alerte-ocean {
+            background: rgba(239, 68, 68, 0.08);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-left: 5px solid #ef4444;
+            border-radius: 0 12px 12px 0;
+            padding: 30px;
+            margin: 30px 0;
+        }
+
+        .alerte-ocean .alerte-titre {
+            color: #f87171;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .alerte-ocean p {
+            color: #cbd5e1;
+            text-align: justify;
+            margin-bottom: 12px;
+        }
+
+        .alerte-ocean p:last-child {
+            margin-bottom: 0;
+        }
+
+        .declaration-card {
+            background: rgba(32, 201, 151, 0.06);
+            border: 1px solid rgba(32, 201, 151, 0.3);
+            border-radius: 16px;
+            padding: 40px 30px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .declaration-card img {
+            width: 100%;
+            max-width: 560px;
+            border-radius: 12px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+            border: 3px solid rgba(32, 201, 151, 0.4);
+            display: block;
+            margin: 0 auto 30px;
+        }
+
+        .message-declaration {
+            color: #a7f3d0;
+            font-size: 1.15rem;
+            line-height: 1.9;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 40px;
+            background: linear-gradient(135deg, #059669, #20c997);
+            color: white;
+            text-decoration: none;
+            border-radius: 40px;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 6px 20px rgba(32, 201, 151, 0.35);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-download:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(32, 201, 151, 0.5);
+            color: white;
+        }
+
+        .btn-download svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .partage-note {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-top: 18px;
+        }
+
+        .chiffres-cles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .chiffre-item {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .chiffre-item .valeur {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #f87171;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .chiffre-item .label {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .conclusion-box {
+            background: rgba(76, 175, 80, 0.08);
+            border: 1px solid rgba(76, 175, 80, 0.25);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .conclusion-box p {
+            color: #86efac;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Climat & Environnement</a>
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="mercosur.html">Mercosur</a>
+            <a href="consommation.html">Consommation</a>
+            <a href="phytoplancton.html">Phytoplancton</a>
+            <a href="voiture_baleine.html">Voiture vs Baleine</a>
+            <a href="captivite_cetaces.html">Captivite Cetaces</a>
+            <a href="tech_vs_agro.html">Tech vs Agro</a>
+            <a href="declaration.html" style="color: #20c997; font-weight: bold;">Déclaration</a>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="container">
+        <div class="page-container">
+
+            <header class="page-header">
+                <h1>🌍 Déclaration Planète Saine</h1>
+                <p class="subtitle">Carte de conscience planétaire — gratuite et libre de diffusion</p>
+                <p class="date">Rapport scientifique — Décembre 2025</p>
+            </header>
+
+            <!-- ALERTE SCIENTIFIQUE -->
+            <section class="section">
+                <h2>Alerte : Effondrement Océanique 2050</h2>
+
+                <div class="alerte-ocean">
+                    <div class="alerte-titre">
+                        ⚠️ Ce que la science dit — et que peu de gens entendent
+                    </div>
+
+                    <p>
+                        À l'heure actuelle, la santé de nos océans est gravement compromise. Si nous maintenons
+                        la trajectoire actuelle, nous nous dirigeons vers un <strong style="color: #f87171;">effondrement écologique total
+                        d'ici 2050</strong>. Les mécanismes en jeu concernent les cycles biogéochimiques océaniques,
+                        essentiels à la vie telle que nous la connaissons.
+                    </p>
+
+                    <p>
+                        Les travaux de Joe Roman et James McCarthy ont mis en lumière le concept de la
+                        <strong style="color: #fbbf24;">"pompe à baleine"</strong> : les grands mammifères marins agissent comme des
+                        pompes biologiques qui remontent les nutriments des profondeurs vers la surface via leurs
+                        déjections. Ces nutriments — fer, azote — sont vitaux pour le phytoplancton, base de
+                        toute la chaîne alimentaire marine. La pêche industrielle, en dépeuplant les océans de
+                        ces mammifères, a brisé ce cycle vital. Sans ces "pompes", le phytoplancton meurt de
+                        faim, entraînant un effondrement mécanique de la fertilité océanique.
+                    </p>
+
+                    <p>
+                        En parallèle, l'agriculture intensive — notamment pour la production de viande — déverse
+                        des excès d'azote dans les océans, créant une <strong style="color: #f87171;">eutrophisation massive</strong>.
+                        Cet excès d'azote provoque une prolifération excessive d'algues qui, en se décomposant,
+                        consomment l'oxygène disponible : c'est l'anoxie. Dans ces zones anoxiques, les bactéries
+                        sulfato-réductrices prolifèrent et libèrent du <strong style="color: #f87171;">sulfure d'hydrogène (H₂S)</strong>,
+                        un gaz hautement toxique qui tue toute forme de vie aérobie — poissons, crustacés.
+                        Les océans deviennent chimiquement hostiles à la vie.
+                    </p>
+
+                    <p>
+                        Face à ces conditions, un changement de régime s'opère : un océan vidé de ses prédateurs
+                        et pauvre en oxygène ne reste pas vide. Il est envahi par des organismes gélatineux
+                        (méduses) et des tapis microbiens. Nous assistons à une <strong style="color: #fbbf24;">régression vers des
+                        écosystèmes primitifs similaires au Précambrien</strong>.
+                    </p>
+
+                    <p>
+                        Le phytoplancton produit entre <strong style="color: #f87171;">50 à 80% de l'oxygène que nous respirons</strong>.
+                        Si la pompe à baleine s'arrête, c'est la production d'oxygène qui s'effondre.
+                    </p>
+
+                    <p>
+                        Si nous ne changeons pas radicalement notre rapport aux océans, 2050 marquera la transition
+                        vers un océan stratifié, toxique (H₂S) et dominé par des organismes gélatineux.
+                        <strong style="color: #f87171;">Ce n'est ni une question de CO₂, ni de réchauffement climatique seul —
+                        c'est une question d'extraction et de pollution à grande échelle.</strong>
+                    </p>
+                </div>
+            </section>
+
+            <!-- CHIFFRES CLÉS -->
+            <section class="section">
+                <h2>Les chiffres qui alertent</h2>
+                <div class="chiffres-cles">
+                    <div class="chiffre-item">
+                        <span class="valeur">50–80%</span>
+                        <span class="label">de l'oxygène terrestre produit par le phytoplancton</span>
+                    </div>
+                    <div class="chiffre-item">
+                        <span class="valeur">-48%</span>
+                        <span class="label">de phytoplancton depuis 1900 (Boyce et al. / NASA)</span>
+                    </div>
+                    <div class="chiffre-item">
+                        <span class="valeur">2050</span>
+                        <span class="label">horizon de l'effondrement si rien ne change</span>
+                    </div>
+                    <div class="chiffre-item">
+                        <span class="valeur">H₂S</span>
+                        <span class="label">gaz toxique libéré dans les zones anoxiques</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CARTE TÉLÉCHARGEABLE -->
+            <section class="section">
+                <h2>Télécharger votre carte</h2>
+
+                <p>
+                    Cette carte est <strong>gratuite, libre et faite pour être partagée</strong>.
+                    Diffusez-la à votre entourage, vos proches, sur les réseaux. Chaque personne
+                    informée compte.
+                </p>
+
+                <div class="declaration-card">
+                    <img src="images/declaration_planete_saine.webp"
+                         alt="Carte Déclaration Planète Saine">
+
+                    <div class="message-declaration">
+                        "Choisir d'arrêter la consommation de viande et de poisson,<br>
+                        c'est contribuer à un futur plus sain pour la planète<br>
+                        et pour les générations à venir."
+                    </div>
+
+                    <a href="images/declaration_planete_saine.webp"
+                       download="Declaration_Planete_Saine.webp"
+                       class="btn-download">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                        Télécharger la carte — Gratuitement
+                    </a>
+
+                    <p class="partage-note">
+                        Partagez-la pour vos enfants. Pour les générations à venir. 🌱
+                    </p>
+                </div>
+            </section>
+
+            <!-- CONCLUSION -->
+            <section class="section">
+                <h2>Ce que vous pouvez faire</h2>
+
+                <div class="conclusion-box">
+                    <p>
+                        Arrêter la consommation de viande et de poisson n'est pas un sacrifice.<br>
+                        C'est un choix de cohérence avec le vivant,<br>
+                        offrant à la planète un futur plus sain<br>
+                        et aux générations futures de meilleures conditions de vie.
+                    </p>
+                </div>
+
+                <div class="info-box">
+                    <strong>Les animaux ne sont pas uniquement des biens de consommation.</strong>
+                    Ce sont des êtres vivants, intégrés aux équilibres naturels dont dépend notre propre survie.
+                    Les générations futures hériteront des choix que nous faisons aujourd'hui.
+                </div>
+            </section>
+
+            <!-- SOURCES -->
+            <div class="sources">
+                <h3>Sources scientifiques</h3>
+                <ul>
+                    <li>Roman & McCarthy — "The Whale Pump: Marine Mammals Enhance Primary Productivity in a Coastal Basin" (2010)</li>
+                    <li><a href="https://www.nature.com/articles/nature09268" target="_blank">Boyce et al., Nature (2010)</a> — Déclin du phytoplancton depuis 1900</li>
+                    <li><a href="https://www.ipcc.ch/srocc/" target="_blank">GIEC SROCC 2019</a> — Océans et cryosphère dans un climat changeant</li>
+                    <li><a href="https://oceanservice.noaa.gov/facts/ocean-oxygen.html" target="_blank">NOAA</a> — Production d'oxygène océanique</li>
+                    <li><a href="https://www.fao.org/fishery/en/topic/166235" target="_blank">FAO</a> — Pêche industrielle et stocks mondiaux</li>
+                </ul>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>Données publiques — Analyses indépendantes</p>
+                <p>Contact : <a href="mailto:gabriel.dataanalysi@outlook.fr">gabriel.dataanalysi@outlook.fr</a></p>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+</html>
