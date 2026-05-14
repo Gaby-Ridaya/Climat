@@ -2,7 +2,7 @@
 
 Site d'analyses scientifiques sur les enjeux climatiques et environnementaux, basé sur des données publiques (GIEC, FAO, IEA, NASA).
 
-**Site en ligne :** [ecosystemes-marins.netlify.app](https://ecosystemes-marins.netlify.app/)
+**Site en ligne :** [github.com/Gaby-Ridaya/Climat](https://github.com/Gaby-Ridaya/Climat)
 
 ---
 
@@ -19,7 +19,7 @@ Site d'analyses scientifiques sur les enjeux climatiques et environnementaux, ba
 </p>
 
 <p align="center">
-  <a href="https://ecosystemes-marins.netlify.app/declaration.html">
+  <a href="https://github.com/Gaby-Ridaya/Climat/blob/main/declaration.html">
     👉 Télécharger la carte — Déclaration Planète Saine
   </a>
 </p>
