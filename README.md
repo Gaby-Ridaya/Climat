@@ -2,7 +2,7 @@
 
 Site d'analyses scientifiques sur les enjeux climatiques et environnementaux, basé sur des données publiques (GIEC, FAO, IEA, NASA).
 
-**Site en ligne :** [github.com/Gaby-Ridaya/Climat](https://github.com/Gaby-Ridaya/Climat)
+**Site en ligne :** [gaby-ridaya.github.io/Climat](https://gaby-ridaya.github.io/Climat/)
 
 ---
 
@@ -19,7 +19,7 @@ Site d'analyses scientifiques sur les enjeux climatiques et environnementaux, ba
 </p>
 
 <p align="center">
-  <a href="https://github.com/Gaby-Ridaya/Climat/blob/main/declaration.html">
+  <a href="https://gaby-ridaya.github.io/Climat/declaration.html">
     👉 Télécharger la carte — Déclaration Planète Saine
   </a>
 </p>
