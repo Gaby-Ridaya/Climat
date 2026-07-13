@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emissions de CO2 : le revenu, pas la population</title>
+    <meta name="description" content="Les emissions de CO2 par habitant suivent le niveau de revenu des pays, pas leur taille de population. Donnees Our World in Data / Global Carbon Project, 2022.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Climat & Environnement">
+    <meta property="og:title" content="Emissions de CO2 : le revenu, pas la population">
+    <meta property="og:description" content="Un Qatari emet 290 fois plus de CO2 qu'un Nigerien. Le Niger a pourtant 9 fois plus d'habitants que le Qatar. Donnees 2022.">
+    <meta property="og:url" content="https://ecosystemes-marins.netlify.app/emissions_revenu.html">
+    <meta property="og:image" content="https://ecosystemes-marins.netlify.app/images/emissions_revenu_10_pays.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Emissions de CO2 : le revenu, pas la population">
+    <meta name="twitter:description" content="Un Qatari emet 290 fois plus de CO2 qu'un Nigerien. Le Niger a pourtant 9 fois plus d'habitants que le Qatar. Donnees 2022.">
+    <meta name="twitter:image" content="https://ecosystemes-marins.netlify.app/images/emissions_revenu_10_pays.png">
+    <link rel="canonical" href="https://ecosystemes-marins.netlify.app/emissions_revenu.html">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Climat & Environnement</a>
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="mercosur.html">Mercosur</a>
+            <a href="consommation.html">Consommation</a>
+            <a href="emissions_revenu.html">Emissions & Revenu</a>
+            <a href="phytoplancton.html">Phytoplancton</a>
+            <a href="voiture_baleine.html">Voiture vs Baleine</a>
+            <a href="captivite_cetaces.html">Captivite Cetaces</a>
+            <a href="tech_vs_agro.html">Tech vs Agro</a>
+            <a href="grande_distribution.html">Grande Distribution</a>
+            <a href="declin_populations.html">Populations en Declin</a>
+            <a href="declaration.html" style="color: #20c997; font-weight: bold;">Déclaration</a>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="container">
+        <div class="page-container">
+
+            <header class="page-header">
+                <h1>Emissions de CO2 : le revenu, pas la population</h1>
+                <p class="subtitle">Ce qui explique l'empreinte carbone d'un pays</p>
+                <p class="date">Donnees 2022</p>
+            </header>
+
+            <!-- Intro -->
+            <section class="section">
+                <h2>Un argument frequent</h2>
+                <p>
+                    « Le vrai probleme climatique, c'est qu'on est trop nombreux sur Terre. »
+                    Cet argument revient souvent dans le debat public. Il deplace le regard vers
+                    la demographie des pays du Sud plutot que vers les modes de vie des pays riches.
+                </p>
+                <p>
+                    On a regarde les chiffres : population, PIB par habitant et emissions de CO2
+                    par habitant, pays par pays (Our World in Data / Global Carbon Project, 2022).
+                    Le resultat est net : ce qui predit l'empreinte carbone d'un pays, c'est son
+                    niveau de revenu — pas sa population.
+                </p>
+            </section>
+
+            <!-- Graphique 1 : bubble chart 164 pays -->
+            <section class="section">
+                <h2>164 pays, une seule variable qui compte</h2>
+                <p>
+                    Chaque bulle est un pays. Sa position horizontale est son PIB par habitant,
+                    sa position verticale ses emissions de CO2 par habitant, et sa taille sa
+                    population. Si la demographie expliquait les emissions, les grosses bulles
+                    (Inde, Nigeria, Chine) seraient en haut du graphique. Elles ne le sont pas :
+                    la position d'un pays suit une diagonale nette, du revenu vers les emissions.
+                </p>
+
+                <div class="graph-container">
+                    <img src="images/emissions_revenu_164_pays.png"
+                         alt="Nuage de points : emissions de CO2 par habitant vs PIB par habitant pour 164 pays en 2022, taille des bulles proportionnelle a la population, couleur par continent">
+                    <p class="graph-caption">
+                        Source : Our World in Data / Global Carbon Project — owid-co2-data.csv, 2022
+                    </p>
+                </div>
+            </section>
+
+            <!-- Graphique 2 : barres 10 pays -->
+            <section class="section">
+                <h2>Les chiffres, pays par pays</h2>
+                <p>
+                    Le nuage de points precedent montre la relation sur l'ensemble des pays, mais
+                    les valeurs precises sont difficiles a lire sur une echelle logarithmique.
+                    Voici dix pays representatifs, du plus pauvre au plus riche par habitant.
+                </p>
+
+                <div class="graph-container">
+                    <img src="images/emissions_revenu_10_pays.png"
+                         alt="Graphique en barres : PIB par habitant et emissions de CO2 par habitant pour dix pays en 2022, tries par emissions croissantes">
+                    <p class="graph-caption">
+                        Source : Our World in Data / Global Carbon Project — owid-co2-data.csv, 2022
+                    </p>
+                </div>
+
+                <div class="warning-box">
+                    <strong>Constat :</strong> un Qatari emet 37,9 tonnes de CO2 par an, un Nigerien
+                    0,13 tonne — <strong>290 fois moins</strong>. Le Niger a pourtant 9 fois plus
+                    d'habitants que le Qatar.
+                </div>
+            </section>
+
+            <!-- Nuance total vs par habitant -->
+            <section class="section">
+                <h2>Une nuance importante : par habitant vs au total</h2>
+                <p>
+                    Ce graphique repond a une question precise : qui pollue le plus, <em>par
+                    personne</em> ? Ce n'est pas la meme question que « quel pays emet le plus
+                    en tonnage total ? ». L'Inde, avec 1,4 milliard d'habitants, emet plus de CO2
+                    en tonnage brut que la France (67 millions d'habitants) — meme si chaque
+                    Indien emet, en moyenne, moins de la moitie de ce qu'emet chaque Francais.
+                </p>
+
+                <div class="info-box">
+                    <strong>France vs Inde (2022) :</strong> 4,5 t/habitant contre 2,0 t/habitant
+                    (la France emet plus par personne), mais ~295 Mt contre ~2 831 Mt au total
+                    (l'Inde emet 21 fois plus de CO2 au total, du fait de sa population). Les deux
+                    lectures sont vraies et repondent a des questions differentes.
+                </div>
+
+                <p>
+                    Le PIB par habitant est aussi une moyenne nationale : elle masque les inegalites
+                    internes. Un individu riche en Inde ou au Nigeria a souvent une empreinte
+                    carbone comparable a un riche europeen ; un individu pauvre aux Etats-Unis
+                    emet beaucoup moins que la moyenne americaine.
+                </p>
+            </section>
+
+            <!-- Tableau recapitulatif -->
+            <section class="section">
+                <h2>Donnees recapitulatives</h2>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Pays</th>
+                            <th>PIB/habitant (PPA $, 2011)</th>
+                            <th>CO2/habitant (t)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Qatar</td><td>131 991</td><td>37,9</td></tr>
+                        <tr><td>Etats-Unis</td><td>57 075</td><td>14,8</td></tr>
+                        <tr><td>Chine</td><td>18 921</td><td>8,2</td></tr>
+                        <tr><td>Allemagne</td><td>46 495</td><td>7,9</td></tr>
+                        <tr><td>France</td><td>40 309</td><td>4,5</td></tr>
+                        <tr><td>Bresil</td><td>15 156</td><td>2,3</td></tr>
+                        <tr><td>Inde</td><td>7 350</td><td>2,0</td></tr>
+                        <tr><td>Nigeria</td><td>5 084</td><td>0,6</td></tr>
+                        <tr><td>Ethiopie</td><td>2 153</td><td>0,1</td></tr>
+                        <tr><td>Niger</td><td>979</td><td>0,1</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Methodologie -->
+            <section class="section">
+                <h2>Methodologie et limites</h2>
+                <div class="info-box">
+                    <strong>Methodologie :</strong> filtrage sur l'annee 2022 (la plus recente avec
+                    PIB, population et CO2/habitant disponibles simultanement), exclusion des
+                    agregats regionaux (World, Europe, UE-27...). PIB par habitant = PIB (dollars
+                    internationaux constants 2011, Maddison Project) divise par la population.
+                </div>
+                <p>
+                    Limites : une seule annee (correlation, pas trajectoire ni causalite) ;
+                    le CO2 mesure est territorial, pas l'empreinte de consommation (les pays qui
+                    delocalisent leur industrie lourde paraissent moins emetteurs qu'ils ne le
+                    sont en realite) ; les moyennes nationales masquent les inegalites internes.
+                </p>
+            </section>
+
+            <!-- Sources -->
+            <div class="sources">
+                <h3>Sources</h3>
+                <ul>
+                    <li><a href="https://github.com/owid/co2-data" target="_blank">Our World in Data / Global Carbon Project</a> — owid-co2-data.csv, 2022</li>
+                    <li>PIB : Bolt and van Zanden, Maddison Project Database 2023 (dollars internationaux constants 2011)</li>
+                </ul>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p><a href="index.html">&larr; Retour a l'accueil</a></p>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+</html>
