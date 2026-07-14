@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech vs Agroalimentaire - Comparaison des impacts</title>
-    <meta name="description" content="Etude en cours : comparaison de l'impact ecologique du numerique vs l'agroalimentaire.">
+    <title>Numerique : combien ca consomme ? - L'empreinte electrique des data centers</title>
+    <meta name="description" content="Consommation electrique mondiale des data centers : 485 TWh en 2025, en hausse de 17% sur un an. Donnees IEA.">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Climat & Environnement">
-    <meta property="og:title" content="Tech vs Agroalimentaire - Etude en cours">
-    <meta property="og:description" content="Etude en cours : comparaison de l'impact ecologique du numerique vs l'agroalimentaire.">
+    <meta property="og:title" content="Numerique : combien ca consomme ?">
+    <meta property="og:description" content="Consommation electrique mondiale des data centers : 485 TWh en 2025, en hausse de 17% sur un an. Donnees IEA.">
     <meta property="og:url" content="https://ecosystemes-marins.netlify.app/tech_vs_agro.html">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Tech vs Agroalimentaire - Etude en cours">
-    <meta name="twitter:description" content="Etude en cours : comparaison de l'impact ecologique du numerique vs l'agroalimentaire.">
+    <meta name="twitter:title" content="Numerique : combien ca consomme ?">
+    <meta name="twitter:description" content="Consommation electrique mondiale des data centers : 485 TWh en 2025, en hausse de 17% sur un an. Donnees IEA.">
     <link rel="canonical" href="https://ecosystemes-marins.netlify.app/tech_vs_agro.html">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -30,7 +30,7 @@
             <a href="phytoplancton.html">Phytoplancton</a>
             <a href="voiture_baleine.html">Voiture vs Baleine</a>
             <a href="captivite_cetaces.html">Captivite Cetaces</a>
-            <a href="tech_vs_agro.html">Tech vs Agro</a>
+            <a href="tech_vs_agro.html">Numérique</a>
             <a href="grande_distribution.html">Grande Distribution</a>
             <a href="declin_populations.html">Populations en Declin</a>
             <a href="declaration.html" style="color: #20c997; font-weight: bold;">Déclaration</a>
@@ -42,20 +42,100 @@
         <div class="page-container">
 
             <header class="page-header">
-                <h1>Tech vs Agroalimentaire</h1>
-                <p class="subtitle">Etude en cours</p>
+                <h1>Numerique : combien ca consomme ?</h1>
+                <p class="subtitle">L'empreinte electrique des data centers, chiffres a l'appui</p>
             </header>
 
             <section class="section">
                 <div class="info-box">
-                    <strong>Cette page est en cours de reecriture.</strong>
+                    <strong>Changement d'approche.</strong>
                     <p style="margin-top: 10px;">
-                        Une premiere version comparait l'impact environnemental du numerique et de
-                        l'agroalimentaire, mais certains chiffres n'etaient pas correctement traces a leurs
-                        sources. Le contenu est retire le temps de refaire ce travail proprement.
+                        Une premiere version de cette page comparait l'impact du numerique a celui de
+                        l'agroalimentaire. Cette comparaison a ete abandonnee : elle mettait face a face
+                        deux secteurs aux perimetres tres differents, ce qui n'apportait pas grand-chose.
+                        Cette page se concentre desormais uniquement sur ce que le numerique consomme
+                        lui-meme.
+                    </p>
+                </div>
+                <p>
+                    Perimetre retenu : les <strong>data centers</strong> uniquement (pas les smartphones,
+                    ordinateurs ni reseaux telecom), car c'est le seul perimetre pour lequel des chiffres
+                    recents et solides existent. Toutes les donnees viennent de l'Agence Internationale de
+                    l'Energie (IEA).
+                </p>
+            </section>
+
+            <!-- Graphique 1 : consommation mesuree -->
+            <section class="section">
+                <h2>Ce que les data centers consomment aujourd'hui</h2>
+                <p>
+                    En 2025, les data centers du monde entier ont consomme 485 TWh d'electricite,
+                    soit une hausse de 17% en un an. A titre de comparaison, la consommation electrique
+                    annuelle totale de la France (menages, industrie, tout compris) etait de 449 TWh
+                    en 2024 — un ordre de grandeur comparable, meme si les annees de reference different.
+                </p>
+
+                <div class="graph-container">
+                    <img src="images/numerique_electricite_1_consommation.png"
+                         alt="Graphique en barres : consommation electrique mondiale des data centers, 415 TWh en 2024 et 485 TWh en 2025">
+                    <p class="graph-caption">
+                        Source : IEA, "Energy and AI" (2025) et "Key Questions on Energy and AI" (2026) ; RTE, Bilan electrique 2024
                     </p>
                 </div>
             </section>
+
+            <!-- Graphique 2 : projection 2030 -->
+            <section class="section">
+                <h2>La trajectoire jusqu'en 2030</h2>
+                <p>
+                    L'IEA projette une consommation de <strong>950 TWh en 2030</strong> dans son scenario
+                    de base, portee notamment par l'intelligence artificielle. L'IEA formule elle-meme la
+                    comparaison : ce niveau equivaudrait a la consommation electrique totale actuelle du
+                    Japon.
+                </p>
+                <div class="warning-box">
+                    <strong>Attention :</strong> la valeur 2030 est une <strong>projection</strong>, pas une
+                    mesure. Elle repose sur le scenario de base publie par l'IEA, pas sur un calcul refait
+                    par nos soins.
+                </div>
+
+                <div class="graph-container">
+                    <img src="images/numerique_electricite_2_projection_2030.png"
+                         alt="Graphique en barres : consommation electrique mondiale des data centers, 415 TWh en 2024, 485 TWh en 2025 (mesures), projection de 950 TWh en 2030 selon le scenario de base de l'IEA">
+                    <p class="graph-caption">
+                        Source : IEA, "Energy and AI" (2025) et "Key Questions on Energy and AI" (2026)
+                    </p>
+                </div>
+            </section>
+
+            <!-- Limites -->
+            <section class="section">
+                <h2>Limites de cette page</h2>
+                <p>
+                    Un graphique sur la consommation d'eau des data centers etait prevu, en s'appuyant
+                    notamment sur les travaux de The Shift Project. Il a ete abandonne : le chiffre le plus
+                    cite dans la presse ("IEA : 560 milliards de litres en 2023") s'est revele introuvable
+                    dans le rapport IEA lui-meme apres verification directe, et une autre source (UNU-INWEH,
+                    institut de recherche de l'ONU) donne un chiffre environ 8 fois superieur pour 2030 sans
+                    methodologie verifiable. Faute de donnee fiable et non contradictoire, ce graphique n'a
+                    pas ete publie.
+                </p>
+                <p>
+                    Le perimetre "data centers" ne couvre pas l'ensemble du numerique (fabrication et usage
+                    des terminaux, reseaux telecom), qui represente une part significative de l'empreinte
+                    du secteur mais pour laquelle les donnees recentes et fiables sont plus rares.
+                </p>
+            </section>
+
+            <div class="sources">
+                <h3>Sources</h3>
+                <ul>
+                    <li><a href="https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai" target="_blank">IEA, "Energy and AI", chapitre "Energy demand from AI"</a> — avril 2025, donnees 2024</li>
+                    <li><a href="https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary" target="_blank">IEA, "Key Questions on Energy and AI", executive summary</a> — avril 2026, donnees 2025</li>
+                    <li><a href="https://www.iea.org/news/ai-is-set-to-drive-surging-electricity-demand-from-data-centres-while-offering-the-potential-to-transform-how-the-energy-sector-works" target="_blank">IEA, communique de presse</a> — comparaison avec la consommation du Japon</li>
+                    <li><a href="https://analysesetdonnees.rte-france.com/bilan-electrique-2024/consommation" target="_blank">RTE, Bilan electrique 2024</a> — consommation electrique francaise</li>
+                </ul>
+            </div>
 
             <!-- Footer -->
             <footer class="footer">
