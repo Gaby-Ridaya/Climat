@@ -115,6 +115,48 @@
                 </div>
             </section>
 
+            <!-- Fabrication et puces -->
+            <section class="section">
+                <h2>La fabrication : l'angle mort qui se comble</h2>
+                <p>
+                    Jusqu'ici, cette page ne couvrait que l'electricite consommee par les data centers en
+                    fonctionnement. Mais fabriquer un data center (serveurs, puces, batiment,
+                    refroidissement) a aussi un cout carbone, distinct de celui de son usage.
+                </p>
+                <p>
+                    Au niveau mondial, la repartition est d'environ <strong>75% pour l'usage et 25% pour
+                    la fabrication</strong> (Schneider Electric, 2023). Mais cette proportion depend
+                    directement de l'intensite carbone de l'electricite locale : moins l'electricite est
+                    carbonee, plus la fabrication pese relativement lourd, puisque l'usage emet alors
+                    moins. En France, avec un mix electrique tres decarbone, la fabrication grimperait
+                    jusqu'a <strong>45% de l'empreinte totale</strong> (contre 20% en Europe sur une
+                    hypothese de mix 2017 plus carbone) — un chiffre a garder en tete si on installe des
+                    data centers en France au nom de son electricite bas-carbone : ca deplace le probleme
+                    vers la fabrication, ca ne le supprime pas.
+                </p>
+                <p>
+                    Dans cette part fabrication, ce sont les composants electroniques — pas le batiment ni
+                    le refroidissement — qui dominent largement : 75 a 80% au niveau mondial. Sur une carte
+                    IA specifiquement (NVIDIA HGX H100, la carte a 8 GPU utilisee pour l'entrainement des
+                    grands modeles), la memoire et les circuits integres representent a eux seuls environ
+                    70% de l'empreinte de fabrication de la carte.
+                </p>
+
+                <div class="graph-container">
+                    <img src="images/numerique_electricite_3_fabrication_puces.png"
+                         alt="Deux graphiques : a gauche, repartition usage/fabrication de l'empreinte carbone des data centers pour l'Europe (80/20), le monde (75/25) et la France (55/45) ; a droite, zoom sur la fabrication mondiale montrant que les composants electroniques representent 75 a 80% de l'empreinte, avec une note sur la carte NVIDIA HGX H100 ou memoire et circuits integres font environ 70%">
+                    <p class="graph-caption">
+                        Source : The Shift Project, rapport final IA (octobre 2025), citant Schneider Electric (2023), Boavizta (2021b) et Nvidia (PCF HGX H100, 2025)
+                    </p>
+                </div>
+
+                <div class="info-box">
+                    <strong>Limite :</strong> ce sont des repartitions en pourcentage, pas des tonnages
+                    absolus. Aucune source fiable de tonnage absolu de CO2 lie specifiquement a la
+                    fabrication (mondiale ou francaise) n'a ete trouvee a ce jour.
+                </div>
+            </section>
+
             <!-- Ce qui manque encore -->
             <section class="section">
                 <h2>Ce qui manque encore a cette etude</h2>
@@ -137,12 +179,12 @@
                     fiable, rien n'est publie sur ce point ici.
                 </p>
                 <p>
-                    <strong>La fabrication et le reste du numerique.</strong> Cette page ne couvre que
-                    l'electricite des data centers. Elle ne dit rien — pour l'instant — sur la fabrication
-                    des appareils (extraction de metaux et terres rares), les reseaux telecom, ou les
-                    e-dechets. Ce sont potentiellement des postes plus lourds que l'electricite des data
-                    centers, et ils ne sont pas encore chiffres ici. Cette page sera mise a jour au fur et
-                    a mesure que ces recherches avancent.
+                    <strong>Le reste du numerique.</strong> La repartition usage/fabrication des data
+                    centers est maintenant couverte ci-dessus, mais cette page ne dit encore rien sur
+                    l'extraction des metaux et terres rares en amont (tonnage absolu, pas seulement une
+                    proportion), les reseaux telecom, ou les e-dechets en fin de vie. Ce sont
+                    potentiellement des postes lourds, pas encore chiffres ici. Cette page sera mise a
+                    jour au fur et a mesure que ces recherches avancent.
                 </p>
             </section>
 
@@ -153,7 +195,7 @@
                     <li><a href="https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary" target="_blank">IEA, "Key Questions on Energy and AI", executive summary</a> — avril 2026, donnees 2025</li>
                     <li><a href="https://www.iea.org/news/ai-is-set-to-drive-surging-electricity-demand-from-data-centres-while-offering-the-potential-to-transform-how-the-energy-sector-works" target="_blank">IEA, communique de presse</a> — comparaison avec la consommation du Japon</li>
                     <li><a href="https://analysesetdonnees.rte-france.com/bilan-electrique-2024/consommation" target="_blank">RTE, Bilan electrique 2024</a> — consommation electrique francaise</li>
-                    <li>The Shift Project, "Intelligence artificielle, donnees, calculs : quelles infrastructures dans un monde decarbone ?" — rapport final, octobre 2025 (chiffres electricite coherents avec l'IEA ; absence de donnee eau confirmee)</li>
+                    <li>The Shift Project, "Intelligence artificielle, donnees, calculs : quelles infrastructures dans un monde decarbone ?" — rapport final, octobre 2025 (chiffres electricite coherents avec l'IEA ; absence de donnee eau confirmee ; repartition usage/fabrication citant Schneider Electric 2023, Boavizta 2021b et Nvidia PCF HGX H100 2025)</li>
                 </ul>
             </div>
 
