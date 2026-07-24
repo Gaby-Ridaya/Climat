@@ -13,14 +13,13 @@ Site d'analyses scientifiques sur les enjeux climatiques et environnementaux, ba
 </p>
 
 <p align="center">
-  <strong>Téléchargez la carte gratuitement et partagez-la.</strong><br>
   Choisir d'arrêter la consommation de viande et de poisson,<br>
   c'est contribuer à un futur plus sain pour la planète et pour les générations à venir.
 </p>
 
 <p align="center">
   <a href="https://gaby-ridaya.github.io/Climat/declaration.html">
-    👉 Télécharger la carte — Déclaration Planète Saine
+    👉 Voir la carte — Déclaration Planète Saine
   </a>
 </p>
 
@@ -31,13 +30,16 @@ Site d'analyses scientifiques sur les enjeux climatiques et environnementaux, ba
 | Page | Sujet |
 |------|-------|
 | [Accueil](index.html) | Présentation générale et chiffres clés |
-| [Déclaration Planète Saine](declaration.html) | Alerte scientifique — effondrement océanique 2050. Carte gratuite à télécharger et partager |
+| [Déclaration Planète Saine](declaration.html) | Alerte scientifique — effondrement océanique 2050 |
 | [Phytoplancton](phytoplancton.html) | Déclin du phytoplancton océanique — projections 2026-2100 et impact sur l'oxygène |
 | [Voiture vs Baleine](voiture_baleine.html) | Comparaison de l'impact écologique d'une voiture face aux services écosystémiques d'une baleine |
 | [Captivité des Cétacés](captivite_cetaces.html) | Impact des parcs aquatiques sur les écosystèmes marins |
 | [Accord UE-Mercosur](mercosur.html) | Déforestation amazonienne et scénarios 2026-2050 |
 | [Consommation Alimentaire](consommation.html) | Comparaison France / Allemagne / USA : viande, poisson, végétarisme |
 | [Tech vs Agroalimentaire](tech_vs_agro.html) | Comparaison factuelle des impacts écologiques du numérique vs l'agriculture |
+| [Emissions & Revenu](emissions_revenu.html) | Ce qui explique l'empreinte carbone d'un pays : le revenu, pas la population |
+| [Grande Distribution](grande_distribution.html) | Gaspillage alimentaire et pesticides dans l'agroalimentaire français |
+| [Populations en Déclin](declin_populations.html) | Espèces indicatrices suivies en Europe, espèce par espèce |
 
 ---
 
@@ -55,6 +57,9 @@ site/
 ├── mercosur.html
 ├── consommation.html
 ├── tech_vs_agro.html
+├── emissions_revenu.html
+├── grande_distribution.html
+├── declin_populations.html
 └── images/
     ├── declaration_planete_saine.webp
     └── ...
