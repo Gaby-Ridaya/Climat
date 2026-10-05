@@ -95,6 +95,9 @@ présenter de manière à ce que chacun puisse les comprendre et s'en emparer.
 ├── declaration.html    Déclaration Planète Saine
 ├── *.html              Une page par étude
 ├── style.css           Feuille de style commune
+├── nav.js              Fermeture du menu déroulant
+├── favicon.svg         Icône du site (sapin)
+├── apple-touch-icon.png  Icône pour l'écran d'accueil des téléphones
 ├── sitemap.xml
 └── images/             Graphiques générés en Python
 ```
