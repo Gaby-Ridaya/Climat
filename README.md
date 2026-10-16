@@ -106,6 +106,6 @@ présenter de manière à ce que chacun puisse les comprendre et s'en emparer.
 
 ## Contact
 
-Gabriel Alba — [gabi.analyst@outlook.com](mailto:gabi.analyst@outlook.com)
+Gabriel Alba — [gabriel.ridaya@protonmail.com](mailto:gabriel.ridaya@protonmail.com)
 
 Contenu sous licence [MIT](LICENSE).
