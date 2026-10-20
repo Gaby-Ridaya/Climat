@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/banniere_occitan.webp" alt="L'Occitan — Regard depuis le Sud. Chroniques et analyses" width="800">
+</p>
+
 # Climat & Environnement — Analyses Scientifiques
 
 **Site en ligne :** [gaby-ridaya.github.io/Climat](https://gaby-ridaya.github.io/Climat/)
@@ -6,7 +10,8 @@ Un site de vulgarisation scientifique qui rend accessibles les grands enjeux éc
 — climat, océans, biodiversité, alimentation, inégalités — à partir de données publiques
 et d'études scientifiques, traduites en graphiques clairs et en textes courts.
 
-Conçu et réalisé par **Gabriel Alba**.
+Conçu et réalisé par **Gabriel Alba**. Les études du site accompagnent la série
+**« L'Occitan — Regard depuis le Sud »**, publiée sur LinkedIn.
 
 ---
 
@@ -27,7 +32,9 @@ présenter de manière à ce que chacun puisse les comprendre et s'en emparer.
 3. **Vulgariser** — chaque étude raconte une idée principale, illustrée par quelques graphiques
    et expliquée en langage simple.
 4. **Corriger publiquement** — quand une erreur est identifiée, la page est corrigée et la
-   correction est signalée (exemple : *Voiture vs Baleine*, correction de juillet 2026).
+   correction est signalée (exemples : *Voiture vs Baleine*, correction de juillet 2026 ;
+   *Grande Distribution*, partie betterave mise à jour en octobre 2026 avec la loi d'urgence
+   agricole de 2026 et les chiffres FranceAgriMer).
 
 > **Un site en évolution.** Ces analyses ne sont pas figées : je reviens régulièrement sur
 > chaque étude pour corriger une erreur ou intégrer des données plus récentes et plus justes
@@ -58,7 +65,7 @@ présenter de manière à ce que chacun puisse les comprendre et s'en emparer.
 | [Consommation Alimentaire](https://gaby-ridaya.github.io/Climat/consommation.html) | France, Allemagne, USA : viande, poisson, végétarisme |
 | [Numérique](https://gaby-ridaya.github.io/Climat/tech_vs_agro.html) | Impacts écologiques du numérique comparés à ceux de l'agriculture |
 | [Émissions & Revenu](https://gaby-ridaya.github.io/Climat/emissions_revenu.html) | Le revenu, plus que la population, explique l'empreinte carbone d'un pays |
-| [Grande Distribution](https://gaby-ridaya.github.io/Climat/grande_distribution.html) | Gaspillage alimentaire et pesticides dans l'agroalimentaire français |
+| [Grande Distribution](https://gaby-ridaya.github.io/Climat/grande_distribution.html) | Gaspillage alimentaire des grandes surfaces ; betterave sucrière : une production stable qui sert à justifier le retour de pesticides interdits |
 | [Populations en Déclin](https://gaby-ridaya.github.io/Climat/declin_populations.html) | Espèces indicatrices suivies en Europe, espèce par espèce |
 | [Pesticides](https://gaby-ridaya.github.io/Climat/pesticides.html) | Santé (expertise Inserm 2021) et biodiversité (expertise INRAE-Ifremer 2022) |
 | [Concentration des richesses](https://gaby-ridaya.github.io/Climat/concentration_richesses.html) | Patrimoine des 500 plus grandes fortunes de France comparé au PIB et aux budgets écologiques |
@@ -88,18 +95,20 @@ présenter de manière à ce que chacun puisse les comprendre et s'en emparer.
 
 - **Analyse et graphiques** : Python
 - **Site** : HTML et CSS, sans framework, adapté aux écrans de téléphone
+- **Charte graphique L'Occitan** : rouge sombre `#7A1A14`, or `#E9B949`, fond clair `#FAF7F0`,
+  les mêmes couleurs que les graphiques et la bannière ; chaque étude commence par la bannière
 - **Hébergement** : GitHub Pages
 
 ```
 ├── index.html          Page d'accueil
 ├── declaration.html    Déclaration Planète Saine
 ├── *.html              Une page par étude
-├── style.css           Feuille de style commune
+├── style.css           Feuille de style commune (couleurs L'Occitan en variables)
 ├── nav.js              Fermeture du menu déroulant
 ├── favicon.svg         Icône du site (sapin)
 ├── apple-touch-icon.png  Icône pour l'écran d'accueil des téléphones
 ├── sitemap.xml
-└── images/             Graphiques générés en Python
+└── images/             Graphiques générés en Python et bannière L'Occitan
 ```
 
 ---
