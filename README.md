@@ -58,7 +58,6 @@ présenter de manière à ce que chacun puisse les comprendre et s'en emparer.
 
 | Étude | Sujet |
 |-------|-------|
-| [Phytoplancton](https://gaby-ridaya.github.io/Climat/phytoplancton.html) | Déclin du phytoplancton océanique, rôle des baleines, projections 2026-2100 |
 | [Voiture vs Baleine](https://gaby-ridaya.github.io/Climat/voiture_baleine.html) | Coût écologique d'une voiture face aux services rendus par une baleine |
 | [Captivité des Cétacés](https://gaby-ridaya.github.io/Climat/captivite_cetaces.html) | Impact des parcs aquatiques sur les écosystèmes marins |
 | [Accord UE-Mercosur](https://gaby-ridaya.github.io/Climat/mercosur.html) | Déforestation amazonienne, exports de soja et de bœuf, scénarios 2026-2050 |
