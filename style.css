@@ -178,6 +178,8 @@ h1, h2, h3, .navbar, .navbar .logo {
     width: 92px;
     height: 92px;
     flex-shrink: 0;
+    border-radius: 50%;          /* croix des douze signes, dans un cercle */
+    border: 2px solid var(--or);
 }
 
 .entete-occitan .entete-texte {
@@ -906,40 +908,3 @@ h1, h2, h3, .navbar, .navbar .logo {
     }
 }
 
-
-/* Accueil : la croix et les douze signes, dans un cercle */
-.une-croix {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.4rem;
-    margin: 1.5rem auto 2.5rem;
-    text-decoration: none;
-    color: var(--texte);
-}
-.une-croix img {
-    width: min(320px, 80vw);
-    height: auto;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid var(--or);
-    box-shadow: 0 0 0 8px var(--fond), 0 0 0 10px var(--or-fonce);
-}
-.une-croix-legende {
-    font-size: 0.8rem;
-    font-style: italic;
-    color: var(--texte-secondaire);
-}
-.une-croix-titre {
-    font-family: 'Cinzel', serif;
-    font-size: 1.3rem;
-    color: var(--rouge);
-}
-.une-croix-lien {
-    color: var(--or-fonce);
-    font-weight: bold;
-}
-.une-croix:hover .une-croix-lien {
-    color: var(--rouge-clair);
-}
