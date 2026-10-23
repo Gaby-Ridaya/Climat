@@ -4,9 +4,6 @@
 
 # L'Occitan — Regard depuis l'Occitanie
 
-Depuis Lavaur, je regarde le monde : son histoire, ses spiritualités, ses idées, ses machines,
-sa terre et sa musique. L'Occitan est un journal de réflexion, pas de commentaire à chaud.
-
 **Site :** [gaby-ridaya.github.io/Climat](https://gaby-ridaya.github.io/Climat/)
 
 ## Les rubriques
