@@ -1,21 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+
 /* ==========================================
-   SITE CLIMAT - STYLE PRINCIPAL
-   Charte L'Occitan : mêmes couleurs que la bannière LinkedIn et que les
-   graphiques (occitan-data/src/occitan_data/style.py).
+   L'OCCITAN - STYLE PRINCIPAL
+   Charte : brun nuit, or doux, parchemin, titres bordeaux ;
+   titres en Cinzel, texte en Lora. Mêmes couleurs que les graphiques
+   (occitan-data/src/occitan_data/style.py).
    ========================================== */
 
 :root {
-    --rouge: #7A1A14;            /* rouge sombre de la bannière */
-    --rouge-clair: #9B2A22;      /* survol des liens */
-    --or: #E9B949;               /* or de la bannière */
-    --or-fonce: #A87F1C;         /* or lisible sur fond clair (textes, puces) */
-    --creme: #F5EFE3;            /* texte clair sur fond rouge */
-    --fond: #FAF7F0;             /* fond clair des graphiques */
-    --carte: #FFFFFF;
-    --texte: #2A2522;
-    --texte-secondaire: #6B625B;
-    --grille: #E3DCCF;           /* bordures discrètes */
+    --rouge: #6E2233;            /* bordeaux : titres, liens */
+    --rouge-clair: #8C3346;      /* survol des liens */
+    --or: #C9A84C;               /* or doux */
+    --or-fonce: #9A7A2C;         /* or lisible sur fond clair (textes, puces) */
+    --creme: #F5E9C4;            /* or pâle : texte sur fond brun */
+    --fond: #FDF6E3;             /* parchemin */
+    --carte: #FFFDF7;
+    --texte: #2C1A0E;            /* brun */
+    --texte-secondaire: #6B5A48;
+    --grille: #E8DDC3;           /* bordures discrètes */
     --ardoise: #3F5F6F;
+    --brun-nuit: #2C1A0E;        /* menu et en-tête */
 }
 
 * {
@@ -25,7 +29,7 @@
 }
 
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Lora', Georgia, serif;
     background: var(--fond);
     min-height: 100vh;
     color: var(--texte);
@@ -40,7 +44,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: var(--rouge);
+    background: var(--brun-nuit);
     backdrop-filter: blur(10px);
     padding: 15px 30px;
     display: flex;
@@ -108,7 +112,7 @@ body {
     left: 0;
     display: flex;
     flex-direction: column;
-    background: var(--rouge);
+    background: var(--brun-nuit);
     border: 1px solid var(--or);
     border-radius: 8px;
     padding: 8px 0;
@@ -120,6 +124,12 @@ body {
 .nav-dropdown-menu a {
     padding: 8px 20px;
     white-space: nowrap;
+}
+
+/* Le dernier menu (à droite de la barre) s'ouvre vers la gauche pour rester dans l'écran */
+.navbar .nav-links details.nav-dropdown:last-child .nav-dropdown-menu {
+    left: auto;
+    right: 0;
 }
 
 /* ==========================================
@@ -136,22 +146,83 @@ body {
     border-radius: 20px;
     padding: 40px;
     border: 1px solid var(--grille);
-    box-shadow: 0 10px 30px rgba(42, 37, 34, 0.08);
+    box-shadow: 0 10px 30px rgba(44, 26, 14, 0.08);
 }
 
 /* ==========================================
-   BANNIERE L'OCCITAN (en haut de chaque étude)
+   TYPOGRAPHIE DES TITRES
    ========================================== */
-.banniere-occitan {
-    display: block;
-    margin: -10px 0 30px;
+h1, h2, h3, .navbar, .navbar .logo {
+    font-family: 'Cinzel', Georgia, serif;
+    letter-spacing: 0.04em;
 }
 
-.banniere-occitan img {
-    width: 100%;
-    height: auto;
-    display: block;
+/* ==========================================
+   EN-TÊTE L'OCCITAN (en haut de chaque page, écrit en texte)
+   Croix occitane, nom, accroche. Variante .entete-petite pour les études.
+   ========================================== */
+.entete-occitan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    background: var(--brun-nuit);
     border-radius: 12px;
+    border-bottom: 3px solid var(--or);
+    padding: 36px 24px;
+    margin: -10px 0 36px;
+    text-decoration: none;
+}
+
+.entete-occitan img {
+    width: 92px;
+    height: 92px;
+    flex-shrink: 0;
+}
+
+.entete-occitan .entete-texte {
+    border-left: 1px solid var(--or);
+    padding-left: 28px;
+}
+
+.entete-occitan .entete-titre {
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--creme);
+    letter-spacing: 0.06em;
+    line-height: 1.1;
+}
+
+.entete-occitan .entete-accroche {
+    font-family: 'Lora', Georgia, serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: var(--or);
+    margin-top: 6px;
+}
+
+.entete-occitan.entete-petite {
+    padding: 18px 20px;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.entete-occitan.entete-petite img {
+    width: 54px;
+    height: 54px;
+}
+
+.entete-occitan.entete-petite .entete-texte {
+    padding-left: 18px;
+}
+
+.entete-occitan.entete-petite .entete-titre {
+    font-size: 1.8rem;
+}
+
+.entete-occitan.entete-petite .entete-accroche {
+    font-size: 1rem;
 }
 
 /* ==========================================
@@ -257,7 +328,7 @@ body {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(42, 37, 34, 0.12);
+    box-shadow: 0 15px 40px rgba(44, 26, 14, 0.12);
     border-color: var(--or);
 }
 
@@ -310,7 +381,7 @@ body {
    ENCADRES
    ========================================== */
 .info-box {
-    background: rgba(233, 185, 73, 0.15);
+    background: rgba(201, 168, 76, 0.15);
     border-left: 4px solid var(--or);
     padding: 20px;
     border-radius: 0 10px 10px 0;
@@ -318,7 +389,7 @@ body {
 }
 
 .warning-box {
-    background: rgba(122, 26, 20, 0.07);
+    background: rgba(110, 34, 51, 0.07);
     border-left: 4px solid var(--rouge);
     padding: 20px;
     border-radius: 0 10px 10px 0;
@@ -345,7 +416,7 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(42, 37, 34, 0.15);
+    box-shadow: 0 8px 20px rgba(44, 26, 14, 0.15);
 }
 
 .quote-box blockquote {
@@ -441,8 +512,10 @@ body {
     }
 
     /* Le menu s'affiche par-dessus la page, centré sous "Environnement" */
-    .nav-dropdown-menu {
+    .nav-dropdown-menu,
+    .navbar .nav-links details.nav-dropdown:last-child .nav-dropdown-menu {
         top: calc(100% + 10px);
+        right: auto;
         left: 50%;
         transform: translateX(-50%);
         max-height: 70vh;
@@ -484,6 +557,351 @@ body {
     }
 
     .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================
+   ACCUEIL : PRÉSENTATION ET RUBRIQUES
+   ========================================== */
+.presentation {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: var(--texte);
+    border-left: 4px solid var(--or);
+    padding: 10px 0 10px 20px;
+    margin: 0 0 40px;
+}
+
+.rubriques-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.rubrique {
+    background: var(--fond);
+    border: 1px solid var(--grille);
+    border-top: 4px solid var(--rouge);
+    border-radius: 10px;
+    padding: 20px 22px;
+}
+
+.rubrique h3 {
+    color: var(--rouge);
+    margin: 0 0 6px;
+}
+
+.rubrique .sujets {
+    color: var(--or-fonce);
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin: 0 0 10px;
+}
+
+.rubrique p {
+    color: var(--texte-secondaire);
+    margin: 0;
+}
+
+.rubrique a.rubrique-lien {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--rouge);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.a-venir {
+    font-style: italic;
+}
+
+/* Entrée de menu sans lien (rubrique dont les articles sont en préparation) */
+.nav-dropdown-menu .nav-a-venir {
+    padding: 8px 20px;
+    color: var(--creme);
+    opacity: 0.7;
+    font-style: italic;
+    white-space: nowrap;
+}
+
+/* Écrans moyens : le menu à cinq entrées se resserre */
+@media (max-width: 1150px) and (min-width: 769px) {
+    .navbar .nav-links {
+        gap: 18px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 6px;
+    }
+
+    .rubriques-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .presentation {
+        font-size: 1.1rem;
+    }
+
+    .entete-occitan {
+        gap: 16px;
+        padding: 24px 14px;
+    }
+
+    .entete-occitan img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .entete-occitan .entete-texte {
+        padding-left: 16px;
+    }
+
+    .entete-occitan .entete-titre {
+        font-size: 1.9rem;
+    }
+
+    .entete-occitan .entete-accroche {
+        font-size: 1rem;
+    }
+
+    .entete-occitan.entete-petite .entete-titre {
+        font-size: 1.5rem;
+    }
+}
+
+/* ==========================================
+   PAGES D'HISTOIRE : CHANSONS ET INSTRUMENTS
+   ========================================== */
+.illustration {
+    margin: 0 0 18px;
+}
+
+.illustration img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.illustration figcaption {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--texte-secondaire);
+    margin-top: 6px;
+}
+
+.illustration-large {
+    margin-bottom: 30px;
+}
+
+.chanson {
+    border: 1px solid var(--grille);
+    border-radius: 12px;
+    padding: 24px;
+    margin: 0 0 36px;
+    background: var(--fond);
+}
+
+.chanson h3 {
+    color: var(--rouge);
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+}
+
+.chanson-sous-titre {
+    color: var(--or-fonce);
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.chanson-notice,
+.chanson-source,
+.note-texte {
+    color: var(--texte-secondaire);
+    font-size: 0.95rem;
+}
+
+.chanson-source {
+    margin-top: 14px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--grille);
+}
+
+.strophes-entete {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin: 18px 0 8px;
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    color: var(--or-fonce);
+}
+
+.strophe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-bottom: 18px;
+}
+
+.vers-oc {
+    font-style: italic;
+    color: var(--rouge);
+    line-height: 1.7;
+}
+
+.vers-fr {
+    border-left: 2px solid var(--or);
+    padding-left: 16px;
+    line-height: 1.7;
+}
+
+.suite-chanson summary {
+    cursor: pointer;
+    color: var(--rouge);
+    font-weight: bold;
+    margin: 4px 0 16px;
+}
+
+.citation-oc {
+    background: var(--brun-nuit);
+    color: var(--creme);
+    border-left: 4px solid var(--or);
+    border-radius: 0 10px 10px 0;
+    padding: 20px 24px;
+    margin: 20px 0 28px;
+}
+
+.citation-oc p[lang="oc"] {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--or);
+    margin-bottom: 10px;
+}
+
+.citation-oc .citation-fr {
+    font-size: 0.95rem;
+}
+
+.instruments-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.instrument {
+    background: var(--carte);
+    border: 1px solid var(--grille);
+    border-top: 3px solid var(--or);
+    border-radius: 10px;
+    padding: 16px 18px;
+}
+
+.instrument h3 {
+    color: var(--rouge);
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.instrument-oc {
+    font-family: 'Lora', Georgia, serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--or-fonce);
+    letter-spacing: 0;
+}
+
+.instrument-famille {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--texte-secondaire);
+    margin-bottom: 4px;
+}
+
+.instrument p {
+    font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+    .instruments-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .strophe,
+    .strophes-entete {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .strophes-entete span:last-child {
+        display: none;
+    }
+
+    .instruments-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chanson {
+        padding: 16px;
+    }
+}
+
+.citation-oc .citation-fr {
+    color: var(--creme);
+}
+
+.instruments-illustres {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.instrument p,
+.vers-fr,
+.chanson-notice {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .instruments-illustres {
+        grid-template-columns: 1fr;
+    }
+}
+
+.instrument .illustration img {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.section .sous-titre-section {
+    color: var(--rouge);
+    font-size: 1.2rem;
+    margin: 30px 0 10px;
+}
+
+/* Portrait à côté du texte (pages d'histoire) */
+.portrait-cote {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.rubrique a.rubrique-lien + a.rubrique-lien {
+    margin-left: 16px;
+}
+
+@media (max-width: 768px) {
+    .portrait-cote {
         grid-template-columns: 1fr;
     }
 }

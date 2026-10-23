@@ -1,27 +1,16 @@
 <p align="center">
-  <img src="images/banniere_occitan.webp" alt="L'Occitan — Regard depuis le Sud. Chroniques et analyses" width="800">
+  <img src="images/partage_occitan.png" alt="L'Occitan — Regard depuis l'Occitanie" width="800">
 </p>
 
-# Climat & Environnement — Analyses Scientifiques
+# L'Occitan — Regard depuis l'Occitanie
 
 **Site en ligne :** [gaby-ridaya.github.io/Climat](https://gaby-ridaya.github.io/Climat/)
 
-Un site de vulgarisation scientifique qui rend accessibles les grands enjeux écologiques
-— climat, océans, biodiversité, alimentation, inégalités — à partir de données publiques
-et d'études scientifiques, traduites en graphiques clairs et en textes courts.
+Depuis Lavaur, je regarde le monde : son histoire, ses spiritualités, ses idées, ses machines,
+sa terre et sa musique. L'Occitan est un journal de réflexion, pas de commentaire à chaud.
 
-Conçu et réalisé par **Gabriel Alba**. Les études du site accompagnent la série
-**« L'Occitan — Regard depuis le Sud »**, publiée sur LinkedIn.
-
----
-
-## Pourquoi ce projet
-
-Il est insupportable de laisser aux générations futures une planète dégradée, traitée comme
-une poubelle. S'il y a un combat à mener, c'est celui-là que j'ai choisi.
-
-Ce site est ma façon d'y contribuer : rassembler des faits solides, les vérifier, et les
-présenter de manière à ce que chacun puisse les comprendre et s'en emparer.
+Conçu et réalisé par **Gabriel Alba**. Rubriques : Histoire & Musique, Pensée & Spiritualité
+(philosophie, spiritualité, astrologie), IA & Technologie, Environnement.
 
 ---
 
@@ -54,7 +43,14 @@ présenter de manière à ce que chacun puisse les comprendre et s'en emparer.
 
 ---
 
-## Les études
+## Rubrique Histoire & Musique
+
+| Page | Sujet |
+|------|-------|
+| [Les troubadours](https://gaby-ridaya.github.io/Climat/troubadours.html) | Trois chansons en occitan et en français (éditions Jeanroy 1913, Audiau 1928), et les instruments des jongleurs d'après le *Fadet joglar* (Keller 1905) |
+| [Lavaur, 1211 : Dame Guiraude](https://gaby-ridaya.github.io/Climat/lavaur.html) | Dame de Lavaur tuée à la prise de la ville, d'après Guillaume de Tudèle et Pierre des Vaux-de-Cernay (éd. Meyer 1875) |
+
+## Rubrique Environnement : les études
 
 | Étude | Sujet |
 |-------|-------|
@@ -74,8 +70,9 @@ présenter de manière à ce que chacun puisse les comprendre et s'en emparer.
 
 - **Analyse et graphiques** : Python
 - **Site** : HTML et CSS, sans framework, adapté aux écrans de téléphone
-- **Charte graphique L'Occitan** : rouge sombre `#7A1A14`, or `#E9B949`, fond clair `#FAF7F0`,
-  les mêmes couleurs que les graphiques et la bannière ; chaque étude commence par la bannière
+- **Charte graphique L'Occitan** : brun nuit `#2C1A0E`, or doux `#C9A84C`, parchemin `#FDF6E3`,
+  titres bordeaux `#6E2233` ; polices Cinzel (titres) et Lora (texte) ; chaque page commence
+  par l'en-tête L'Occitan (croix occitane, nom, accroche)
 - **Hébergement** : GitHub Pages
 
 ```

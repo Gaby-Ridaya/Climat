@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100">
+  <!-- Croix occitane : quatre branches évasées, trois pommettes au bout de chacune -->
+  <g fill="#c9a84c">
+    <g id="branche">
+      <path d="M-3 -4 L-17 -32 L-7 -28 L0 -37 L7 -28 L17 -32 L3 -4 Z"/>
+      <circle cx="-18" cy="-34" r="4"/>
+      <circle cx="0" cy="-40" r="4"/>
+      <circle cx="18" cy="-34" r="4"/>
+    </g>
+    <use href="#branche" transform="rotate(90)"/>
+    <use href="#branche" transform="rotate(180)"/>
+    <use href="#branche" transform="rotate(270)"/>
+    <circle r="7"/>
+  </g>
+</svg>

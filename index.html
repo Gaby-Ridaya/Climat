@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climat & Environnement - Analyses Scientifiques</title>
-    <meta name="description" content="Analyses scientifiques sur le climat, la déforestation, et la consommation alimentaire. Données publiques et visualisations.">
+    <title>L'Occitan — Regard depuis l'Occitanie</title>
+    <meta name="description" content="L'Occitan, journal de réflexion depuis Lavaur : histoire, spiritualité, philosophie, IA, technologie, environnement, astrologie, musique.">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Climat & Environnement">
-    <meta property="og:title" content="Climat & Environnement - Analyses Scientifiques">
-    <meta property="og:description" content="Analyses scientifiques sur le climat, la déforestation, et la consommation alimentaire. Données publiques et visualisations.">
+    <meta property="og:site_name" content="L'Occitan">
+    <meta property="og:title" content="L'Occitan — Regard depuis l'Occitanie">
+    <meta property="og:description" content="Depuis Lavaur, je regarde le monde&nbsp;: son histoire, ses spiritualités, ses idées, ses machines, sa terre et sa musique.">
     <meta property="og:url" content="https://gaby-ridaya.github.io/Climat/">
-    <meta property="og:image" content="https://gaby-ridaya.github.io/Climat/images/banniere_occitan.png">
+    <meta property="og:image" content="https://gaby-ridaya.github.io/Climat/images/partage_occitan.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Climat & Environnement - Analyses Scientifiques">
-    <meta name="twitter:description" content="Analyses scientifiques sur le climat, la déforestation, et la consommation alimentaire. Données publiques et visualisations.">
-    <meta name="twitter:image" content="https://gaby-ridaya.github.io/Climat/images/banniere_occitan.png">
+    <meta name="twitter:title" content="L'Occitan — Regard depuis l'Occitanie">
+    <meta name="twitter:description" content="Depuis Lavaur, je regarde le monde&nbsp;: son histoire, ses spiritualités, ses idées, ses machines, sa terre et sa musique.">
+    <meta name="twitter:image" content="https://gaby-ridaya.github.io/Climat/images/partage_occitan.png">
     <link rel="canonical" href="https://gaby-ridaya.github.io/Climat/">
     <link rel="stylesheet" href="style.css">
     <script src="nav.js" defer></script>
@@ -24,11 +24,30 @@
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!-- Navigation : 4 familles de rubriques -->
     <nav class="navbar">
-        <a href="index.html" class="logo">Climat & Environnement</a>
+        <a href="index.html" class="logo">L'Occitan</a>
         <div class="nav-links">
             <a href="index.html">Accueil</a>
+            <details class="nav-dropdown">
+                <summary>Histoire &amp; Musique</summary>
+                <div class="nav-dropdown-menu">
+                    <a href="troubadours.html">Les troubadours</a>
+                    <a href="lavaur.html">Lavaur : Dame Guiraude</a>
+                </div>
+            </details>
+            <details class="nav-dropdown">
+                <summary>Pensée &amp; Spiritualité</summary>
+                <div class="nav-dropdown-menu">
+                    <span class="nav-a-venir">Premiers articles en préparation</span>
+                </div>
+            </details>
+            <details class="nav-dropdown">
+                <summary>IA &amp; Technologie</summary>
+                <div class="nav-dropdown-menu">
+                    <span class="nav-a-venir">Premiers articles en préparation</span>
+                </div>
+            </details>
             <details class="nav-dropdown">
                 <summary>Environnement</summary>
                 <div class="nav-dropdown-menu">
@@ -50,45 +69,56 @@
     <div class="container">
         <div class="page-container">
 
-            <header class="page-header">
-                <h1>Climat & Environnement</h1>
-                <p class="subtitle">Analyses scientifiques basées sur des données publiques</p>
-                <p class="date">Dernière mise à jour : Octobre 2026</p>
-            </header>
+            <!-- En-tête L'Occitan (texte, pas d'image) -->
+            <a href="index.html" class="entete-occitan">
+                <img src="images/croix_occitane.svg" alt="" width="92" height="92">
+                <div class="entete-texte">
+                    <div class="entete-titre">L'Occitan</div>
+                    <div class="entete-accroche">Regard depuis l'Occitanie</div>
+                </div>
+            </a>
 
-            <!-- Citation -->
-            <div class="quote-box">
-                <img src="images/citation_dernier_arbre.jpg" width="640" height="640" alt="Citation : quand le dernier arbre sera abattu">
-                <blockquote>
-                    Quand le dernier arbre sera abattu, la dernière rivière empoisonnée, le dernier poisson pêché,
-                    alors l'homme découvrira qu'il ne peut pas manger l'argent.
-                    <br><span style="display: block; margin-top: 10px; font-size: 1rem; color: var(--texte-secondaire);">— Prophétie amérindienne</span>
-                </blockquote>
-            </div>
+            <p class="presentation">
+                Depuis Lavaur, je regarde le monde&nbsp;: son histoire, ses spiritualités,
+                ses idées, ses machines, sa terre et sa musique. L'Occitan est un journal
+                de réflexion, pas de commentaire à chaud.
+            </p>
 
-            <!-- Introduction -->
+            <!-- Les rubriques -->
             <section class="section">
-                <h2>Notre approche</h2>
-                <p>
-                    Ce site présente des analyses basées sur des <strong>données publiques officielles</strong>
-                    (FAO, OECD, Eurostat, USDA, Global Forest Watch). L'objectif est de rendre accessibles
-                    des informations complexes à travers des visualisations simples et percutantes.
-                </p>
+                <h2>Les rubriques</h2>
 
-                <div class="info-box">
-                    <strong>Méthodologie :</strong> Les données utilisées proviennent principalement de sources
-                    officielles et d'études scientifiques, toutes citées sur chaque page. Elles sont exprimées en flux physiques (kg, hectares, tonnes) plutôt qu'en valeurs monétaires,
-                    pour mesurer l'impact écologique réel.
-                    <br><br>
-                    <strong>Un site en évolution :</strong> ces analyses ne sont pas figées. Je reviens régulièrement
-                    sur chaque étude pour corriger une erreur ou intégrer des données plus récentes et plus justes
-                    dès que j'en trouve.
+                <div class="rubriques-grid">
+                    <div class="rubrique">
+                        <h3>Histoire &amp; Musique</h3>
+                        <p class="sujets">Histoire · Musique</p>
+                        <p>Les troubadours : trois chansons en occitan et en français, et les instruments des jongleurs.
+                        Lavaur, 1211 : Dame Guiraude.</p>
+                        <a href="troubadours.html" class="rubrique-lien">Les troubadours →</a>
+                        <a href="lavaur.html" class="rubrique-lien">Dame Guiraude →</a>
+                    </div>
+                    <div class="rubrique">
+                        <h3>Pensée &amp; Spiritualité</h3>
+                        <p class="sujets">Philosophie · Spiritualité · Astrologie</p>
+                        <p class="a-venir">Premiers articles en préparation.</p>
+                    </div>
+                    <div class="rubrique">
+                        <h3>IA &amp; Technologie</h3>
+                        <p class="sujets">IA · Technologie</p>
+                        <p class="a-venir">Premiers articles en préparation.</p>
+                    </div>
+                    <div class="rubrique">
+                        <h3>Environnement</h3>
+                        <p class="sujets">Écologie</p>
+                        <p>Neuf études chiffrées, à partir de données publiques.</p>
+                        <a href="#environnement" class="rubrique-lien">Voir les études ↓</a>
+                    </div>
                 </div>
             </section>
 
-            <!-- Cartes des etudes -->
-            <section class="section">
-                <h2>Nos études</h2>
+            <!-- Les études de la rubrique Environnement -->
+            <section class="section" id="environnement">
+                <h2>Environnement : les études</h2>
 
                 <div class="cards-grid">
 
@@ -177,104 +207,18 @@
                 </div>
             </section>
 
-            <!-- Chiffres cles -->
+            <!-- Méthode -->
             <section class="section">
-                <h2>Chiffres clés</h2>
-
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>Indicateur</th>
-                            <th>Valeur</th>
-                            <th>Source</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Déforestation Amazonie 2024</td>
-                            <td>6 288 km2</td>
-                            <td>PRODES/INPE</td>
-                        </tr>
-                        <tr>
-                            <td>Baisse depuis 2022</td>
-                            <td>-50%</td>
-                            <td>WWF-Brazil</td>
-                        </tr>
-                        <tr>
-                            <td>Exports soja Brésil 2024</td>
-                            <td>109 millions tonnes</td>
-                            <td>USDA FAS</td>
-                        </tr>
-                        <tr>
-                            <td>Imports UE depuis Mercosur</td>
-                            <td>56 milliards EUR</td>
-                            <td>Eurostat 2024</td>
-                        </tr>
-                        <tr>
-                            <td>Consommation viande USA</td>
-                            <td>95.6 kg/personne/an</td>
-                            <td>USDA ERS</td>
-                        </tr>
-                        <tr>
-                            <td>Végétariens Allemagne</td>
-                            <td>11.5% population</td>
-                            <td>ProVeg/Statista</td>
-                        </tr>
-                        <tr>
-                            <td>Production O2 par phytoplancton</td>
-                            <td>50-80%</td>
-                            <td>GIEC SROCC 2019</td>
-                        </tr>
-                        <tr>
-                            <td>1 baleine = X voitures (CO2)</td>
-                            <td>385 voitures</td>
-                            <td>IMF / ADEME</td>
-                        </tr>
-                        <tr>
-                            <td>Territoire d'un dauphin sauvage</td>
-                            <td>~100 km²</td>
-                            <td>World Animal Protection 2019</td>
-                        </tr>
-                        <tr>
-                            <td>Agro vs Tech (émissions GES)</td>
-                            <td>11.7% vs 1%</td>
-                            <td>GIEC / IEA</td>
-                        </tr>
-                        <tr>
-                            <td>Déchets alimentaires commerce France 2023</td>
-                            <td>820 000 tonnes</td>
-                            <td>Eurostat / SDES</td>
-                        </tr>
-                        <tr>
-                            <td>Production sucre betterave UE27 2024/25 vs moyenne des 10 dernières campagnes</td>
-                            <td>+3,9%</td>
-                            <td>CEFS 2026</td>
-                        </tr>
-                        <tr>
-                            <td>CO2/habitant Qatar vs Niger 2022</td>
-                            <td>290x</td>
-                            <td>OWID / Global Carbon Project</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="info-box">
+                    <strong>Ma façon de travailler :</strong> les faits cités sont sourcés sur
+                    chaque page ; une opinion est présentée comme une opinion. Quand je trouve
+                    une erreur ou une donnée plus juste, je corrige.
+                </div>
             </section>
-
-            <!-- Sources -->
-            <div class="sources">
-                <h3>Sources principales</h3>
-                <ul>
-                    <li><a href="https://www.fao.org/faostat/" target="_blank">FAOSTAT</a> - Organisation des Nations Unies pour l'alimentation</li>
-                    <li><a href="https://www.oecd.org/en/data/indicators/meat-consumption.html" target="_blank">OECD</a> - Données consommation viande</li>
-                    <li><a href="https://data.globalforestwatch.org/" target="_blank">Global Forest Watch</a> - Données déforestation</li>
-                    <li><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a> - Commerce UE</li>
-                    <li><a href="https://apps.fas.usda.gov/psdonline/" target="_blank">USDA FAS</a> - Agriculture USA</li>
-                </ul>
-            </div>
 
             <!-- Footer -->
             <footer class="footer">
-                <p>Données publiques — Analyses indépendantes</p>
-                <p>Site conçu et réalisé par Gabriel Alba</p>
+                <p>L'Occitan — site conçu et réalisé par Gabriel Alba</p>
                 <p>Contact : <a href="mailto:gabriel.ridaya@protonmail.com">gabriel.ridaya@protonmail.com</a></p>
             </footer>
 
