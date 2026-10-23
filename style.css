@@ -908,3 +908,241 @@ h1, h2, h3, .navbar, .navbar .logo {
     }
 }
 
+
+
+/* ==========================================
+   PAGE ASTROGABRIEL TRÉSORS (astrologie.html)
+   Esprit du dossier : crème, titres dorés, Cormorant Garamond. Thème clair seulement.
+   ========================================== */
+.page-astro {
+    --astro-fond: var(--fond);
+    --astro-carte: var(--carte);
+    --astro-texte: var(--texte);
+    --astro-doux: var(--texte-secondaire);
+    --astro-or: var(--or-fonce);
+    --astro-bord: var(--grille);
+    background: var(--astro-fond);
+    color: var(--astro-texte);
+}
+.page-astro h1,
+.page-astro h2,
+.page-astro h3,
+.astro-prix {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    color: var(--astro-or);
+    font-weight: 600;
+}
+.astro-entete {
+    text-align: center;
+    margin: 2rem 0 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--astro-or);
+}
+.astro-surtitre {
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: var(--astro-doux);
+}
+.astro-entete h1 {
+    font-size: clamp(2.2rem, 7vw, 3.4rem);
+    font-variant: small-caps;
+    color: var(--astro-texte);
+    margin: 0.3rem 0;
+}
+.astro-entete h1 span {
+    color: var(--astro-or);
+}
+.astro-sous-titre {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--astro-doux);
+}
+.astro-section {
+    margin: 2.2rem 0;
+}
+.astro-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+}
+.astro-liste li,
+.astro-etapes li {
+    margin: 0.4rem 0;
+}
+.astro-liste li::marker {
+    content: "◆  ";
+    color: var(--astro-or);
+}
+.astro-images,
+.astro-cartes {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+.astro-images {
+    grid-template-columns: repeat(2, 1fr);
+}
+.astro-cartes {
+    grid-template-columns: repeat(3, 1fr);
+}
+.astro-emplacement {
+    margin: 0;
+    text-align: center;
+}
+.astro-emplacement figcaption {
+    font-style: italic;
+    color: var(--astro-doux);
+    margin-top: 0.4rem;
+}
+.astro-emplacement-vide {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 3px dashed var(--astro-or);
+    border-radius: 8px;
+    color: var(--astro-or);
+    font-weight: bold;
+    background: var(--astro-carte);
+}
+.astro-exemples {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+.astro-exemples figure {
+    margin: 0;
+    text-align: center;
+}
+.astro-exemples img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid var(--astro-or);
+    box-shadow: 0 8px 24px rgba(44, 26, 14, 0.12);
+}
+.astro-exemples figcaption {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--astro-doux);
+    margin-top: 0.5rem;
+}
+.astro-apercus {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1.4rem;
+}
+.astro-apercus figure {
+    margin: 0;
+    text-align: center;
+}
+.astro-apercus img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--astro-bord);
+}
+.astro-apercus figcaption,
+.astro-donnees,
+.astro-note,
+.astro-adresse {
+    font-size: 0.9rem;
+    color: var(--astro-doux);
+}
+.astro-apercus figcaption {
+    font-style: italic;
+    margin-top: 0.4rem;
+}
+.astro-donnees {
+    text-align: center;
+    margin-top: 0.8rem;
+}
+.astro-adresse {
+    margin: 0;
+}
+.astro-note {
+    font-style: italic;
+}
+.astro-carte {
+    background: var(--astro-carte);
+    border: 1px solid var(--astro-bord);
+    border-radius: 8px;
+    padding: 1rem;
+}
+.astro-carte h3 {
+    font-size: 1.25rem;
+    margin: 0 0 0.3rem;
+}
+.astro-carte p {
+    margin: 0;
+    color: var(--astro-doux);
+}
+.astro-offre {
+    text-align: center;
+    margin: 2.5rem 0;
+    padding: 1.5rem;
+    border-top: 1px solid var(--astro-or);
+    border-bottom: 1px solid var(--astro-or);
+}
+.astro-prix {
+    font-size: 3rem;
+    margin: 0;
+}
+.astro-delai {
+    font-size: 1.1rem;
+    margin: 0.2rem 0 1rem;
+}
+.astro-a-completer {
+    background: var(--or);
+    color: var(--brun-nuit);
+    padding: 0 0.4rem;
+    border-radius: 4px;
+}
+.commande-bouton a {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    background: var(--rouge);
+    color: var(--fond);
+    border: 2px solid var(--or);
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.commande-bouton a:hover {
+    background: var(--rouge-clair);
+}
+.astro-bientot {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--astro-doux);
+    text-align: center;
+}
+.astro-pensee {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 1.35rem;
+    line-height: 1.5;
+    margin: 1.5rem 0 0;
+    padding: 0.8rem 1.2rem;
+    border-left: 3px solid var(--astro-or);
+    color: var(--astro-texte);
+}
+.astro-mention {
+    font-size: 0.8rem;
+    color: var(--astro-doux);
+    text-align: center;
+    margin-top: 2rem;
+}
+@media (max-width: 640px) {
+    .astro-apercus,
+    .astro-exemples,
+    .astro-images,
+    .astro-cartes {
+        grid-template-columns: 1fr;
+    }
+}
