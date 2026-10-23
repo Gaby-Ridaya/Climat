@@ -345,6 +345,15 @@ h1, h2, h3, .navbar, .navbar .logo {
     font-size: 1rem;
 }
 
+/* Image en tête de carte, à la place de l'icône */
+.card .card-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
 .card .icon {
     font-size: 3rem;
     margin-bottom: 15px;
