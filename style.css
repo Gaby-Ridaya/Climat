@@ -154,12 +154,6 @@ body {
     border-radius: 12px;
 }
 
-/* Lien « Déclaration » mis en avant dans la barre de navigation */
-.navbar .nav-links a.nav-declaration {
-    color: var(--or);
-    font-weight: bold;
-}
-
 /* ==========================================
    HEADER PAGE
    ========================================== */

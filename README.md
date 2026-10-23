@@ -66,27 +66,7 @@ présenter de manière à ce que chacun puisse les comprendre et s'en emparer.
 | [Émissions & Revenu](https://gaby-ridaya.github.io/Climat/emissions_revenu.html) | Le revenu, plus que la population, explique l'empreinte carbone d'un pays |
 | [Grande Distribution](https://gaby-ridaya.github.io/Climat/grande_distribution.html) | Gaspillage alimentaire des grandes surfaces ; betterave sucrière : une production stable qui sert à justifier le retour de pesticides interdits |
 | [Populations en Déclin](https://gaby-ridaya.github.io/Climat/declin_populations.html) | Espèces indicatrices suivies en Europe, espèce par espèce |
-| [Pesticides](https://gaby-ridaya.github.io/Climat/pesticides.html) | Santé (expertise Inserm 2021) et biodiversité (expertise INRAE-Ifremer 2022) |
 | [Concentration des richesses](https://gaby-ridaya.github.io/Climat/concentration_richesses.html) | Patrimoine des 500 plus grandes fortunes de France comparé au PIB et aux budgets écologiques |
-
----
-
-## 🌍 Déclaration Planète Saine
-
-<p align="center">
-  <img src="images/declaration_planete_saine.webp" alt="Déclaration Planète Saine" width="600">
-</p>
-
-<p align="center">
-  Choisir d'arrêter la consommation de viande et de poisson,<br>
-  c'est contribuer à un futur plus sain pour la planète et pour les générations à venir.
-</p>
-
-<p align="center">
-  <a href="https://gaby-ridaya.github.io/Climat/declaration.html">
-    👉 Voir la carte — Déclaration Planète Saine
-  </a>
-</p>
 
 ---
 
@@ -100,7 +80,6 @@ présenter de manière à ce que chacun puisse les comprendre et s'en emparer.
 
 ```
 ├── index.html          Page d'accueil
-├── declaration.html    Déclaration Planète Saine
 ├── *.html              Une page par étude
 ├── style.css           Feuille de style commune (couleurs L'Occitan en variables)
 ├── nav.js              Fermeture du menu déroulant
